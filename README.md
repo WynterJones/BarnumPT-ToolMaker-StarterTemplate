@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## 🎯 BarnumPT Tool Maker Starter Template
+
+This template is pre-configured for **iframe embedding** so your tools can be embedded on any website without CORS issues.
+
+### Iframe Embedding Configuration
+
+The `next.config.ts` includes:
+- ✅ **Content-Security-Policy: frame-ancestors \*** - Allows embedding from any domain
+- ✅ **X-Frame-Options: ALLOWALL** - Overrides default blocking behavior
+
+This means tools built with this template can be embedded anywhere using:
+```html
+<iframe src="YOUR_TOOL_URL" width="100%" height="500"></iframe>
+```
+
 ## Getting Started
 
 First, run the development server:
