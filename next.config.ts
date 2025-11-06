@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
             key: 'Content-Security-Policy',
             value: 'frame-ancestors *',
           },
+          {
+            // Remove X-Frame-Options blocking
+            key: 'X-Frame-Options',
+            value: 'ALLOWALL',
+          },
         ],
       },
     ];
