@@ -12,14 +12,9 @@ const nextConfig: NextConfig = {
         headers: [
           {
             // Allow embedding in iframes from any domain
+            // Use 'frame-ancestors https://yourdomain.com' to restrict to specific domains
             key: 'Content-Security-Policy',
             value: 'frame-ancestors *',
-          },
-          {
-            // Remove X-Frame-Options to prevent blocking
-            // Note: This overrides the default DENY setting
-            key: 'X-Frame-Options',
-            value: 'ALLOWALL',
           },
         ],
       },
