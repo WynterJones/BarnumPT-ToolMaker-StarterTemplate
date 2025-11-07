@@ -1,9 +1,9 @@
-import Image from "next/image";
+import TodoList from "./components/TodoList";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      {/* App Here */}
+    <div className="min-h-screen bg-white py-8 font-sans">
+      <TodoList />
     </div>
   );
 }
